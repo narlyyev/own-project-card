@@ -1,0 +1,59 @@
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.bg-image {
+    background-image: url("../img/39.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-shadow {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.email {
+    animation-name: email;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.orange-circle::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: orange;
+}
+
+.orange-circle-1::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: -2;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: orange;
+}
+
+@keyframes email {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
