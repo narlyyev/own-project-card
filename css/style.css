@@ -57,3 +57,7 @@ body {
         transform: scale(1);
     }
 }
+
+.btn {
+    transition: .6s all;
+}
