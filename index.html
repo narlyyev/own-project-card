@@ -412,9 +412,9 @@
 
     <!-- portfolio -->
     <!-- slider -->
-    <div id="portfolio" class="bg-dark bg-opacity-10 py-3">
+    <div id="portfolio" class="bg-secondary bg-opacity-10 py-3 pb-3">
         <div class="container-xl">
-            <div class="h5 text-center orange-circle position-relative">
+            <div class="h2 text-center orange-circle position-relative">
                 PORTFOLIO
             </div>
             <section class="splide pt-4" aria-label="Splide">
@@ -454,13 +454,14 @@
                 document.addEventListener('DOMContentLoaded', function () {
                     var splide = new Splide('.splide', {
                         type: 'loop',
-                        drag: 'free',
-                        focus: 'center',
                         perPage: 3,
+                        gap: 15,
                         focus: 'center',
-                        autoScroll: {
-                            speed: 2,
-                        },
+                        autoplay: 'play',
+                        interval: 4000,
+                        pagination: false,
+                        pauseOnHover: false,
+                        speed: 900,
                         breakpoints: {
                             768: {
                                 perPage: 2,
@@ -469,12 +470,10 @@
                                 perPage: 1,
                             },
                         },
-                        pagination: false,
-                        arrows: true,
-
                     });
-                    new Splide('.splide').mount(window.splide.Extensions);
 
+                    splide.mount();
+                    new Splide('.splide').mount(window.splide.Extensions);
                     splide.mount();
                 });
             </script>
@@ -482,6 +481,7 @@
     </div>
     <!--/slider -->
     <!--/portfolio -->
+
 
     <!-- contact -->
     <div id="contact" class="container-xl">
@@ -590,7 +590,6 @@
         });
     </script>
     <script src="js/splide.min.js"></script>
-    <script src="js/splide-extension-auto-scroll.min.js"></script>
 </body>
 
 </html>
