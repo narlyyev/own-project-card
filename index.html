@@ -51,7 +51,7 @@
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
-                        <span class="email navbar-text">
+                        <span class="email navbar-text text-primary">
                             narlyyev0999@gmail.com
                         </span>
                     </div>
@@ -76,10 +76,10 @@
                             </div>
                             <div class="d-flex justify-content-lg-start justify-content-sm-center">
                                 <div class="pe-4">
-                                    <a href="#" class="btn btn-outline-warning fw-bold">Portfolio</a>
+                                    <a href="#portfolio" class="btn btn-outline-warning fw-bold">Portfolio</a>
                                 </div>
                                 <div>
-                                    <a href="#" class="btn btn-outline-info fw-bold">About Me</a>
+                                    <a href="#about-me" class="btn btn-outline-info fw-bold">About Me</a>
                                 </div>
                             </div>
                         </div>
@@ -449,6 +449,23 @@
                         </li>
                     </ul>
                 </div>
+                <button type="button" class="btn btn-warning d-block px-4 fw-bold mt-3 mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Click me!
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="fs-6 modal-body text-center text-secondary">
+                                or find my portfolio on my github account <br>
+                                <a href="https://github.com/narlyyev" class="text-decoration-none text-info">https://github.com/narlyyev</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
@@ -542,21 +559,19 @@
                             Please provide a valid city.
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <label for="validationCustom04" class="form-label">State</label>
                         <select class="form-select" id="validationCustom04" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
+                            <option selected disabled value="">Choose your state</option>
+                            <option>Ashgabat</option>
+                            <option>Ahal</option>
+                            <option>Lebap</option>
+                            <option>Balkan</option>
+                            <option>Mary</option>
+                            <option>Dasoguz</option>
                         </select>
                         <div class="invalid-feedback">
                             Please select a valid state.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="validationCustom05" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid zip.
                         </div>
                     </div>
                     <div class="col-12">
@@ -571,7 +586,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-outline-warning text-black" type="submit">Submit</button>
+                        <button class="btn btn-warning text-black" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
